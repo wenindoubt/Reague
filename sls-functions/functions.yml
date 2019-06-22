@@ -1,0 +1,22 @@
+theMessenger:
+  handler: src/main/lambdas/riot_handler.theMessenger
+  events:
+    - http:
+        path: messenger
+        method: post
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - lambda:InvokeFunction
+      Resource:
+        - arn:aws:lambda:${self:provider.region}:*:function:${self:service}-${self:provider.stage}-reague
+
+reague:
+  handler: src/main/lambdas/riot_handler.reague
+  timeout: 15
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Scan
+      Resource:
+        - arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.SUMMONERS_TABLE}
