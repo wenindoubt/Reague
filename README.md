@@ -24,12 +24,6 @@ A side project of mine that allows a user to type in `/Reague?` into a Slack wor
 
 * [Serverless Framework](https://serverless.com/) - The Framework used to build my components
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
