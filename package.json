@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@slack/webhook": "^5.0.0",
-    "aws-sdk": "^2.476.0",
+    "aws-sdk": "^2.814.0",
     "bottlejs": "^1.7.2"
   },
   "devDependencies": {
